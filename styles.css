@@ -18,14 +18,14 @@ h4{
     color: var(--gris);
     letter-spacing: 2px;
     font-weight: 200;
-    font-size: .8rem;
+    font-size: .75rem;
     font-family: "Lato", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
 h2{
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Trade Winds", system-ui;
     font-style: normal;
 }
@@ -33,7 +33,7 @@ h2{
 /*empieza header*/
 header{
     width: 100%; min-height: 20rem;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXLpoG2BWTymoYLpkpThsWfgWT856i2JLAFMa0Wz3pw&s);
+    background: linear-gradient(to bottom, #ff6600, #f8f7f7);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -87,23 +87,46 @@ header{
    display: none;
 }
 @media screen and (max-width:750px){
-   .aparece{
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 50px;
-    transition: all .3s ease-in-out;
-   }
-  .seve > ol{
-    display: none;
+  .containerMenu{
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  .containerMenu > ol{
+  display: none;
+    max-width: 100%;
+   
+  }
+  .aparece{
+    position: absolute;
+    display: block;
+    width: 70px;
+    right: 0;
+  }
+  .seve ol{
+    width: 100%;
+    display: block;
+    text-align: center;
+    animation: menu 1s ease-in-out; /* Animación de 1 segundo con efecto ease-in-out */
+  }
+  @keyframes menu {
+    from {
+      opacity: 0; /* Opacidad inicial 0 (transparente) */
+      transform:  scaley(0.5); /* Escala inicial 0.5 */
+    }
+    to {
+      opacity: 1; /* Opacidad final 1 (opaco) */
+      transform:  scaley(1); /* Escala final 1 (tamaño normal) */
+    }
+  }
+
+
 }
 
 /*termina menu -> empieza texto header*/ 
 
 .textoHeader{
-width: 100%; max-width: 1600px;
-margin: 3rem auto;
+width: 95%; max-width: 1600px;
+margin: 1rem auto;
 text-align: left;
 }
 .textoHeader > nav{
@@ -112,14 +135,14 @@ text-align: left;
 }
 .textoHeader h1{
     color: #ffffff;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: "Trade Winds", system-ui;
     font-style: normal;
 }
 .textoHeader p{
-    padding: 1rem 0 1rem 0;
+    padding: .5rem 0 1rem 0;
     color: var(--gris);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -266,8 +289,7 @@ border-bottom: 1px solid grey;
 footer{
    margin:4rem 0 auto; padding: 0 0 2rem 0;
    text-align: center;
-    border-top: 1px solid var(--gris);
-    background-color:#1f1f1f ;
+    background-color:#1f1f1f3b ;
 }
 footer p{
    padding: 2rem 0 1rem 0;
@@ -340,7 +362,8 @@ footer > div ol li a svg:hover{
   }
 
 
-  .elemento-aparecer2 {
+  /* CSS inicial para el elemento */
+.elemento-aparecer2 {
     display: none; /* Ocultar inicialmente */
   }
   
@@ -353,13 +376,14 @@ footer > div ol li a svg:hover{
   @keyframes aparecer2 {
     from {
       opacity: 0; /* Opacidad inicial 0 (transparente) */
-      transform: scaley(0.5); /* Escala inicial 0.5 */
+      transform:  scale(0.5); /* Escala inicial 0.5 */
     }
     to {
       opacity: 1; /* Opacidad final 1 (opaco) */
       transform:  scale(1); /* Escala final 1 (tamaño normal) */
     }
   }
+
 
 
 
