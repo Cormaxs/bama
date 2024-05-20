@@ -84,17 +84,19 @@ function actualizarNumero1() {
   detectarEntradaPantalla(fotossacadas, actualizarNumero3);
 
 
+ //menu retarcatil
+const dropdown = document.querySelector('.dropdown');
+const sublist = document.querySelector('.sublist');
+const aparece = document.querySelector('.aparece');
+const ulMain = document.querySelector('.ul-main');
 
+dropdown.addEventListener('click', () => {
+  sublist.classList.toggle('hover');
+});
 
-
-  //MENU TOGGLE
-
-  var containerMenu =  document.querySelector('.containerMenu');
-  var aparece = document.querySelector('.aparece');
-
-  aparece.addEventListener("click", () =>{
-    containerMenu.classList.toggle('seve');
-    });
+aparece.addEventListener("click", () =>{
+ulMain.classList.toggle('seve');
+});
 
 
 

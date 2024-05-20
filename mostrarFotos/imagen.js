@@ -17,28 +17,25 @@ const imagenes = [
   // Función para generar la estructura HTML
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
-    const contenedor = document.createElement("div");
-    contenedor.classList.add('imagen');
-  
+    const contenedor = document.querySelector(".imagen");
     // Recorrer el array de imágenes
     for (const imagen of imagenes) {
       // Crear un elemento img
       const img = document.createElement("img");
       img.src = imagen; // Asignar la URL de la imagen
-  
       // Agregar el elemento img al contenedor
       contenedor.appendChild(img);
     }
-  
     // Devolver la estructura HTML completa
     return contenedor.outerHTML;
   }
   
+  
   // Obtener la estructura HTML generada
   const estructuraHTML = generarEstructuraHTML(imagenes);
   
-  // Insertar la estructura HTML en el DOM (opcional)
-  document.body.innerHTML += estructuraHTML;
+
+
 
 //galeria
 var imgActual,imgSig,imgAnt, primer = imagenes[0],ultimo = imagenes[7];
@@ -105,4 +102,20 @@ btnSig.addEventListener('click', () =>{
     });
     
 }
+
+
+
+//menu retarcatil
+const dropdown = document.querySelector('.dropdown');
+const sublist = document.querySelector('.sublist');
+const aparece = document.querySelector('.aparece');
+const ulMain = document.querySelector('.ul-main');
+
+dropdown.addEventListener('click', () => {
+  sublist.classList.toggle('hover');
+});
+
+aparece.addEventListener("click", () =>{
+ulMain.classList.toggle('seve');
+});
 
