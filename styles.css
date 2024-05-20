@@ -14,7 +14,7 @@ body{
     background-color: var(--blanco);
     font-display: arial;
 }
-h4{
+.bama{
     color: var(--gris);
     letter-spacing: 2px;
     font-weight: 200;
@@ -126,7 +126,7 @@ header{
 
 .textoHeader{
 width: 95%; max-width: 1600px;
-margin: 1rem auto;
+margin: 1rem .5rem auto;
 text-align: left;
 }
 .textoHeader > nav{
@@ -154,7 +154,7 @@ text-align: left;
 
 .dentroMain{
     width: 95%; max-width: 1288px;
-    margin: 4rem auto;
+    margin: 1.5rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
    justify-content: center;
@@ -165,8 +165,8 @@ text-align: left;
 main{
     margin: 3rem 0 0 0;
 }
-main > h2,h4{
-    margin: .5rem auto;
+main > h2,.bama{
+    margin: 1rem auto;
     text-align: center;
 }
 
