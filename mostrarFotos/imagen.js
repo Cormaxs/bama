@@ -1,17 +1,17 @@
 // Ejemplo de array con links de imágenes (al menos 5)
 const imagenes = [
-  "https://picsum.photos/200/300",
-  "https://picsum.photos/300/200",
-  "https://picsum.photos/400/500",
-  "https://picsum.photos/500/400",
-  "https://picsum.photos/600/300",
-  "https://picsum.photos/700/400",
-  "https://picsum.photos/800/200",
-  "https://picsum.photos/900/500",
-  "https://picsum.photos/1000/600",
-  "https://picsum.photos/1100/700",
-  "https://picsum.photos/1200/800",
-  "https://picsum.photos/1300/900",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/0.jpg?raw=true",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg9ULz9Q4t6EWgDNAslxOsELPDv-PO2umw6Vws5Eh2XQ&s",
+  "https://tse1.mm.bing.net/th?id=OIP.TtuHBTYgrAAnVyWAFukCegHaEK&pid=Api&P=0&h=180",
+  "https://www.cronista.com/files/image/510/510159/63e140d384948.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN9_9eUQdWoEdEp1jI5BF9tYrPI_iSVqhpIHSIPLy4XA&s",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/1.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/2.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/3.jpg?raw=true",
+  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
+  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
+  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
+  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180"
   ];
   
   // Función para generar la estructura HTML
@@ -38,7 +38,7 @@ const imagenes = [
 
 
 //galeria
-var imgActual,imgSig,imgAnt, primer = imagenes[0],ultimo = imagenes[7];
+var primer = 0 ,ultimo = 11;
 const imagenContainer = document.querySelector(".imagen");
 const imageness = imagenContainer.querySelectorAll("img");
 const btnClose = document.querySelector('.close');
@@ -48,12 +48,10 @@ const contBtn =document.querySelector('.containerBtn');
 
 var indiceImagen = imagenContainer.addEventListener("click", (event) => {
   const imagenSeleccionada = event.target; // Obtener la imagen seleccionada link
-  const elementoEncontrado = imagenes.findIndex(numero => numero === imagenSeleccionada.src);//comparo el link y obtengo el indice
-  imgActual = elementoEncontrado;
-  imgAnt = (imgActual - 1); imgAnt = imagenes[imgAnt];
-  imgSig = (imgActual + 1); imgSig = imagenes[imgSig];
+  let src = imagenSeleccionada.src;
+  const elementoEncontrado = imagenes.findIndex(numero => numero === src);//comparo el link y obtengo el indice 
+  
   if(imagenSeleccionada != -1 && imagenSeleccionada !== imagenContainer){
-   
     return  funcionalidad(imagenes,elementoEncontrado, imagenSeleccionada);
   } return false;
    
@@ -63,23 +61,24 @@ function funcionalidad(imagenescop, indice, imgselect){
 let aux = imgselect.src;
 //anterior btn
 btnAnt.addEventListener('click', () =>{
-  if(imgselect.className == 'imgActual' && indice > 0 && indice <= 7){
-    indice = indice - 1;
+  if(imgselect.className == 'imgActual' && indice > primer  && indice <= ultimo){
+    indice = (indice - 1);
     imgselect.src = imagenescop[indice];
+    
   }
-else{
-  indice = 7;
+else {
+  indice = ultimo;
   imgselect.src = imagenescop[indice];
 }
     });
 //suguiente btn
 btnSig.addEventListener('click', () =>{
-  if(imgselect.className == 'imgActual' && indice >= 0 && indice <= 6){
-      indice = indice+1;
+  if(imgselect.className == 'imgActual' && indice >= primer && indice <= (ultimo -1)){
+      indice = indice + 1;
       imgselect.src = imagenescop[indice];
     }
   else{
-    indice = 0;
+    indice = primer;
     imgselect.src = imagenescop[indice];
   }
     });
