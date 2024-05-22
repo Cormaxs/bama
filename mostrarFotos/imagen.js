@@ -1,17 +1,17 @@
 // Ejemplo de array con links de imágenes (al menos 5)
 const imagenes = [
   "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/0.jpg?raw=true",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg9ULz9Q4t6EWgDNAslxOsELPDv-PO2umw6Vws5Eh2XQ&s",
-  "https://tse1.mm.bing.net/th?id=OIP.TtuHBTYgrAAnVyWAFukCegHaEK&pid=Api&P=0&h=180",
-  "https://www.cronista.com/files/image/510/510159/63e140d384948.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN9_9eUQdWoEdEp1jI5BF9tYrPI_iSVqhpIHSIPLy4XA&s",
   "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/1.jpg?raw=true",
   "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/2.jpg?raw=true",
   "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/3.jpg?raw=true",
-  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
-  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
-  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180",
-  "https://tse1.mm.bing.net/th?id=OIP.2TumufLJYnKvtmU6UMWe6wHaE8&pid=Api&P=0&h=180"
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/4.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/5.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/6.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/7.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/8.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/9.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/10.jpg?raw=true",
+  "https://github.com/Cormaxs/bama/blob/main/Fotos-Prueba.nicole/11.jpg?raw=true",
   ];
   
   // Función para generar la estructura HTML
