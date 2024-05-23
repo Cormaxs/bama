@@ -6,10 +6,21 @@
 }
 :root{
     --letras:#222222;
-    --naranja:#ff6600 ;
+    --naranja:#b0cf00 ;
     --gris:#616161;
-    --blanco:#f8f7f7;
+    --blanco:#eef6ff;
+    --negro:#17181D;
+    --secundario:#232836;
 }
+@font-face {
+    font-family:'titulo';
+    src: url("letras/Blackgold-qGAl.otf");
+}
+@font-face {
+    font-family:'textos';
+    src: url("letras/BamaFontCursiva.otf");
+}
+
 body{
     background-color: var(--blanco);
     font-display: arial;
@@ -19,14 +30,14 @@ body{
     letter-spacing: 2px;
     font-weight: 200;
     font-size: .75rem;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "titulo";
     font-weight: 200;
     font-style: normal;
 }
 h2{
     font-weight: 800;
     font-size: 1.5rem;
-    font-family: "Trade Winds", system-ui;
+    font-family: "system-ui", "titulo";
     font-style: normal;
 }
 
@@ -35,25 +46,29 @@ h2{
 
 .menu{
     box-shadow: 0 2px 3px rgba(104, 104, 104, 0.448);
-    background-color: var(--naranja);
+    background-color: var(--secundario);
     display: flex; justify-content: space-around;
     align-items: center;
-    
     width: 100%;
+    
 }
 .menu a{
     transition: all .3s ease-in-out;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .8rem;
     color: var(--blanco);
+    font-family: "titulo";
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 .menu a:hover{
-    color:var(--letras)
+    color:var(--naranja)
 }
 
 .logo{
     width: 100px;
     text-align: center;
+    color: var(--blanco);
 }
 .logo > a{
     font-size: 2rem;
@@ -77,15 +92,22 @@ h2{
     text-align: center;
 }
 .ul-main li a > button{
-    padding: 10px;
+    padding: 9px;
     border-radius: 14px;
-    background-color: transparent;
-    border: 1.5px solid var(--gris);
+    background-color: var(--naranja);
+    border: 1.5px solid var(--naranja);
+    color: var(--secundario);
     transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: .8rem;
+    font-family: "titulo";
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 .ul-main li a > button:hover{
     color: var(--blanco);
-    border: 1.5px solid var(--blanco);
+    box-shadow: 1px 2px 5px var(--naranja);
+    
 }
 .dropdown{
     position: relative;
@@ -95,7 +117,7 @@ h2{
     left: -50px;
     padding: 0 0px 0 50px;
     margin: 18px 0 0 0;
-    background-color: var(--naranja);
+    background-color: var(--secundario);
     position: absolute;
     list-style: none;
     display: none;
@@ -138,7 +160,7 @@ h2{
        transition: all .3s ease-in-out;
        z-index: 0;
         padding: 1em;
-        background-color: var(--naranja);
+        background-color: var(--secundario);
     }
     .ul-main li{
        width: 100%; 
@@ -162,6 +184,7 @@ h2{
         width: 40px; height: 40px;
         display: block;
         cursor: pointer;
+        color: var(--blanco);
     }
     .seve{
         display: block;
@@ -219,17 +242,27 @@ main > h2,.bama{
     width: 100%;
     text-align: center;
 }
-.texto-img > span{
+.texto-img > a span,h3{
     font-family: "Lato", sans-serif;
     font-weight: 200;
     font-style: normal;
+    font-size: .8rem;
 }
+
+.texto-img > a h3{
+    font-size: 1.2rem;
+    font-family: "titulo";
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
 
 /*termina main*/
 
 .texto{
     text-align: center;
     margin: 2rem auto;
+    
 }
 .divContainer{
 width: 95%; max-width: 1280px;
@@ -296,19 +329,21 @@ border-bottom: 1px solid grey;
     
 }
 .numeros{
-    min-width: 200px;
+    min-width: 200px;max-width: 100%;
     flex-grow: 1;
     flex-basis: 200;
     padding: 1rem 0 1rem 0;
     font-weight: 800;
-    font-size: 1.5rem;
     text-align: center;
+    font-size: 1rem;
+    font-family: "titulo";
+    flex-basis: 1;
 }
 .numeros > h2::before{
     content: ' + ';
 }
-.numeros > span{
-    letter-spacing: 2px;
+.numeros > h2{
+   margin: 0 0 .5rem 0;
 }
 
 
@@ -317,7 +352,7 @@ border-bottom: 1px solid grey;
 footer{
    margin:4rem 0 auto; padding: 0 0 2rem 0;
    text-align: center;
-    background-color:#1f1f1f3b ;
+    background-color:var(--secundario) ;
 }
 footer p{
    padding: 2rem 0 1rem 0;
@@ -325,6 +360,7 @@ footer p{
 }
 footer p > a{
     color: #ffffff;
+    text-decoration: none;
     transition: all .3s ease-in-out;
 }
 footer p > a:hover{
