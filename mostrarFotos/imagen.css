@@ -169,13 +169,12 @@ body{
     margin: auto; padding: 1rem 0 ;
     display: flex;
     flex-wrap: wrap;
-  gap: 10px; /* Espacio entre elementos (opcional) */
-
+    justify-content: center;
+    gap: .5rem;
 }
 img{
-    margin: auto;
     object-fit: cover;
-    width: 280px; height: 180px;
+    width: 350px; height: 180px;
     transition: all .3s ease-in-out;
     
 }
@@ -206,7 +205,11 @@ img:hover{
     border: none;
 }
 .ant > svg{
-    width: 25px; height: auto;
+    opacity: .5;
+    width: 30px; height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
 }
 .sig{
     background-color: transparent;
@@ -222,10 +225,15 @@ img:hover{
     cursor:pointer;
 }
 .sig > svg{
-    width: 25px; height: auto;
+    opacity: .5;
+    width: 30px; height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
 }
 
 .close{
+    opacity: .5;
     position: absolute;
     top: 0.5%;
     right: 0.5%;
@@ -235,9 +243,13 @@ img:hover{
     position: fixed;
     border:none;
     cursor:pointer;
+    
 }
 .close > svg{
     width: 50px; height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
 }
 .imgActual{
    position: absolute;

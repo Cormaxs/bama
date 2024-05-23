@@ -23,6 +23,7 @@ const imagenes = [
       // Crear un elemento img
       const img = document.createElement("img");
       img.src = imagen; // Asignar la URL de la imagen
+      img.alt = "imagen de muestra";
       // Agregar el elemento img al contenedor
       contenedor.appendChild(img);
     }
@@ -59,6 +60,7 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
 
 function funcionalidad(imagenescop, indice, imgselect){
 let aux = imgselect.src;
+if(imgselect.className !== " "){
 //anterior btn
 btnAnt.addEventListener('click', () =>{
   if(imgselect.className == 'imgActual' && indice > primer  && indice <= ultimo){
@@ -92,14 +94,17 @@ btnSig.addEventListener('click', () =>{
     }
     // Add event listener for close button (assuming btnClose is defined)
     btnClose.addEventListener('click', () => {
+      imgselect.src = aux;
       imgselect.classList.remove('imgActual');
+      imgselect.className = ' ';
       btnClose.style.display = "none"; // Ensure close button hides on click
       btnAnt.style.display = "none";
       btnSig.style.display = "none";
       //imgselect.className = 'nada';  Elimina todas las clases del elemento
-      imgselect.src = aux;
+      
     });
     
+}
 }
 
 
