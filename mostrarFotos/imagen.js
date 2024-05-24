@@ -18,6 +18,20 @@ const imagenes = [
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
     const contenedor = document.querySelector(".imagen");
+
+    //crear el elemento para visualizar las imagenes
+    const container = document.createElement('div');
+  container.classList.add('mostrarImg');
+  const image = document.createElement('img');
+  image.classList.add('imagenActual');
+  image.src = 'algo.jpg';
+  image.alt = '';
+  container.appendChild(image);
+  document.body.appendChild(container);
+  //crea p
+  const contador = document.createElement('p');
+  contador.classList.add('contador');
+  container.appendChild(contador);
     // Recorrer el array de imágenes
     for (const imagen of imagenes) {
       // Crear un elemento img
@@ -30,96 +44,77 @@ const imagenes = [
     // Devolver la estructura HTML completa
     return contenedor.outerHTML;
   }
-  
-  
   // Obtener la estructura HTML generada
-  const estructuraHTML = generarEstructuraHTML(imagenes);
-  
+  const estructuraHTML = generarEstructuraHTML(imagenes); 
+
+
 
 
 
 //galeria
-var primer = 0 ,ultimo = 11;
+var primer = 0 ,ultimo = imagenes.length;
 const imagenContainer = document.querySelector(".imagen");
-const imageness = imagenContainer.querySelectorAll("img");
+const mostrarImg = document.querySelector('.mostrarImg');
+//botones
 const btnClose = document.querySelector('.close');
 const btnAnt = document.querySelector('.ant');
 const btnSig = document.querySelector('.sig');
 const contBtn =document.querySelector('.containerBtn');
 
+//saco indice y link
 var indiceImagen = imagenContainer.addEventListener("click", (event) => {
   const imagenSeleccionada = event.target; // Obtener la imagen seleccionada link
   let src = imagenSeleccionada.src;
   const elementoEncontrado = imagenes.findIndex(numero => numero === src);//comparo el link y obtengo el indice 
+  MostrarImagen(elementoEncontrado, src);
   
-  if(imagenSeleccionada != -1 && imagenSeleccionada !== imagenContainer){
-    return  funcionalidad(imagenes,elementoEncontrado, imagenSeleccionada);
-  } return false;
-   
 });
 
-function funcionalidad(imagenescop, indice, imgselect){
-let aux = imgselect.src;
-if(imgselect.className !== " "){
-//anterior btn
+function MostrarImagen(indice, link){
+  let pArrai = imagenes[indice];
+  if(link == pArrai && indice >= 0 && indice <= 11){
+    var ver = mostrarImg.querySelector('img')
+    ver.src = pArrai;
+    //botones
+    MostrarBotones(ver, indice);
+    const contadorP = document.querySelector('.contador');
+    contadorP.textContent = `${indice +1}/${ultimo}`;
+  }
+};
+
+function MostrarBotones(link, indice){
+  btnClose.style.display = "block";
+  btnAnt.style.display = "block";
+  btnSig.style.display = "block";
+  mostrarImg.style.display = "block";
+  //bton cerrar
+  btnClose.addEventListener('click', () => {
+    btnClose.style.display = "none"; 
+    btnAnt.style.display = "none";
+    btnSig.style.display = "none";
+    link.src = " ";//saco la imagen
+    mostrarImg.style.display = "none";
+  });
+
+  // btn anterior
 btnAnt.addEventListener('click', () =>{
-  if(imgselect.className == 'imgActual' && indice > primer  && indice <= ultimo){
-    indice = (indice - 1);
-    imgselect.src = imagenescop[indice];
-    
-  }
-else {
-  indice = ultimo;
-  imgselect.src = imagenescop[indice];
-}
-    });
-//suguiente btn
+  let actual = indice -1;
+  let linkActual = imagenes[actual];
+    MostrarImagen(actual,linkActual );
+  });
+
+    //bton siguiente
 btnSig.addEventListener('click', () =>{
-  if(imgselect.className == 'imgActual' && indice >= primer && indice <= (ultimo -1)){
-      indice = indice + 1;
-      imgselect.src = imagenescop[indice];
-    }
-  else{
-    indice = primer;
-    imgselect.src = imagenescop[indice];
-  }
+  let actual = indice + 1;
+  let linkActual = imagenes[actual];
+  MostrarImagen(actual,linkActual );
     });
-    // Add 'imgActual' class for styling and functionality
-    imgselect.classList.add('imgActual');
-    // Toggle button visibility based on the presence of 'imgActual'
-    if (imgselect.classList.contains('imgActual')) {
-      btnClose.style.display = "block";
-      btnAnt.style.display = "block";
-      btnSig.style.display = "block";
-    }
-    // Add event listener for close button (assuming btnClose is defined)
-    btnClose.addEventListener('click', () => {
-      imgselect.src = aux;
-      imgselect.classList.remove('imgActual');
-      imgselect.className = ' ';
-      btnClose.style.display = "none"; // Ensure close button hides on click
-      btnAnt.style.display = "none";
-      btnSig.style.display = "none";
-      //imgselect.className = 'nada';  Elimina todas las clases del elemento
-      
-    });
-    
-}
-}
+
+};
 
 
 
-//menu retarcatil
-const dropdown = document.querySelector('.dropdown');
-const sublist = document.querySelector('.sublist');
-const aparece = document.querySelector('.aparece');
-const ulMain = document.querySelector('.ul-main');
 
-dropdown.addEventListener('click', () => {
-  sublist.classList.toggle('hover');
-});
 
-aparece.addEventListener("click", () =>{
-ulMain.classList.toggle('seve');
-});
+
 
