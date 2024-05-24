@@ -113,3 +113,7 @@ function espera(elemento, aparecer, tiempo){
 }
 espera(elementoAparecer, 'aparecer', 0);
 espera(elementoAparecer2, 'aparecer2', 0);
+
+
+
+//carrucel
