@@ -51,77 +51,76 @@ const imagenes = [
 
 
 
-//galeria
-var primer = 0 ,ultimo = imagenes.length;
+// galeria
+var primer = 0, ultimo = imagenes.length;
 var indiceGlobal;
 const imagenContainer = document.querySelector(".imagen");
 const mostrarImg = document.querySelector('.mostrarImg');
-//botones
+var mostrarFoto = mostrarImg.querySelector('img');
+const MostrarContador = document.querySelector('.contador');
+// botones
 const btnClose = document.querySelector('.close');
 const btnAnt = document.querySelector('.ant');
 const btnSig = document.querySelector('.sig');
-const contBtn =document.querySelector('.containerBtn');
+const contBtn = document.querySelector('.containerBtn');
 
-//saco indice y link
+// saco indice y link
 var indiceImagen = imagenContainer.addEventListener("click", (event) => {
-  const imagenSeleccionada = event.target; // Obtener la imagen seleccionada link
-  let src = imagenSeleccionada.src;
-  const elementoEncontrado = imagenes.findIndex(numero => numero === src);//comparo el link y obtengo el indice 
-  ;MostrarBotones(src);
-  indiceGlobal = elementoEncontrado;
-  let linkImg = imagenes[indiceGlobal];//link buscado a traves del indice actual
-  var mostrarFoto =  mostrarImg.querySelector('img');
-  mostrarFoto.src = linkImg;//muestra  foto
-  const MostrarContador = document.querySelector('.contador');
-  MostrarContador.textContent = `${indiceGlobal +1}/${ultimo}`;
-
-
-   //botones
-   btnSig.addEventListener('click', () => {
-    indiceGlobal = indiceGlobal +1;
-    linkImg = imagenes[indiceGlobal];
-    if(indiceGlobal >= primer && indiceGlobal <= ultimo -1){
-      MostrarContador.textContent = `${indiceGlobal +1}/${ultimo}`;
-      return mostrarFoto.src = linkImg;//muestra  foto
-    }else{
-      return indiceGlobal = primer;
+    const imagenSeleccionada = event.target; // Obtener la imagen seleccionada link
+    let src = imagenSeleccionada.src;
+    const elementoEncontrado = imagenes.findIndex(numero => numero === src); // comparo el link y obtengo el indice
+    if (elementoEncontrado != -1) {
+        MostrarBotones(src);
+        indiceGlobal = elementoEncontrado;
+    } else {
+        console.log("intente de nuevo");
     }
-   
-  });
- 
-  btnAnt.addEventListener('click', () => {
-    indiceGlobal = indiceGlobal -1;
+    let linkImg = imagenes[indiceGlobal]; // link buscado a traves del indice actual
+    if(indiceGlobal != -1){
+      mostrarFoto.src = linkImg; // muestra  foto
+      MostrarContador.textContent = `${indiceGlobal + 1}/${ultimo}`;
+    }
+});
+    // **Move event listener creation for btnSig outside of indiceImagen:**
+    btnSig.addEventListener('click', () => {
+      // Implement btnSig logic here (e.g., increase indiceGlobal)
+      indiceGlobal = indiceGlobal+1;
+      if(indiceGlobal >= primer && indiceGlobal <= ultimo-1){
+        linkImg = imagenes[indiceGlobal];
+        mostrarFoto.src = linkImg;
+        MostrarContador.textContent = `${indiceGlobal + 1}/${ultimo}`;
+      }else{
+        indiceGlobal = ultimo-1;
+      }
+    });
+
+btnAnt.addEventListener('click', () => {
+  indiceGlobal = indiceGlobal-1;
+  if(indiceGlobal >= primer && indiceGlobal <= ultimo-1){
     linkImg = imagenes[indiceGlobal];
-    if(indiceGlobal >= primer && indiceGlobal <= ultimo -1 ){
-    MostrarContador.textContent = `${indiceGlobal +1}/${ultimo}`;
-    return mostrarFoto.src = linkImg;//muestra  foto
+    mostrarFoto.src = linkImg;
+    MostrarContador.textContent = `${indiceGlobal + 1}/${ultimo}`;
+  }else{
+    indiceGlobal = primer;
   }
-  else{
-    return indiceGlobal = ultimo;
-  }
-  });
-  
 });
 
-
-
-
-
-
-function MostrarBotones(link){
-  btnClose.style.display = "block";
-  btnAnt.style.display = "block";
-  btnSig.style.display = "block";
-  mostrarImg.style.display = "block";
- //bton cerrar
- btnClose.addEventListener('click', () => {
-  btnClose.style.display = "none"; 
-  btnAnt.style.display = "none";
-  btnSig.style.display = "none";
-  link.src = " ";//saco la imagen
-  mostrarImg.style.display = "none";
-});
+function MostrarBotones(link) {
+    btnClose.style.display = "block";
+    btnAnt.style.display = "block";
+    btnSig.style.display = "block";
+    mostrarImg.style.display = "block";
+    // boton cerrar
+    btnClose.addEventListener('click', () => {
+        btnClose.style.display = "none";
+        btnAnt.style.display = "none";
+        btnSig.style.display = "none";
+        link.src = " "; // saco la imagen
+        mostrarImg.style.display = "none";
+        indiceGlobal = undefined;
+    });
 };
+
 
 
 
