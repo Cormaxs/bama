@@ -53,6 +53,7 @@ const imagenes = [
 
 //galeria
 var primer = 0 ,ultimo = imagenes.length;
+var indiceGlobal;
 const imagenContainer = document.querySelector(".imagen");
 const mostrarImg = document.querySelector('.mostrarImg');
 //botones
@@ -66,51 +67,67 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
   const imagenSeleccionada = event.target; // Obtener la imagen seleccionada link
   let src = imagenSeleccionada.src;
   const elementoEncontrado = imagenes.findIndex(numero => numero === src);//comparo el link y obtengo el indice 
-  MostrarImagen(elementoEncontrado, src);
+  ;MostrarBotones(src);
+  indiceGlobal = elementoEncontrado;
+  let linkImg = imagenes[indiceGlobal];//link buscado a traves del indice actual
+  var mostrarFoto =  mostrarImg.querySelector('img');
+  mostrarFoto.src = linkImg;//muestra  foto
+  const MostrarContador = document.querySelector('.contador');
+  MostrarContador.textContent = `${indiceGlobal +1}/${ultimo}`;
+
+
+   //botones
+   btnSig.addEventListener('click', () => {
+    indiceGlobal = indiceGlobal +1;
+    linkImg = imagenes[indiceGlobal];
+    if(indiceGlobal >= primer && indiceGlobal <= ultimo -1){
+      MostrarContador.textContent = `${indiceGlobal +1}/${ultimo}`;
+      return mostrarFoto.src = linkImg;//muestra  foto
+    }else{
+      return indiceGlobal = primer;
+    }
+   
+  });
+ 
+  btnAnt.addEventListener('click', () => {
+    indiceGlobal = indiceGlobal -1;
+    linkImg = imagenes[indiceGlobal];
+    if(indiceGlobal >= primer && indiceGlobal <= ultimo -1 ){
+    MostrarContador.textContent = `${indiceGlobal +1}/${ultimo}`;
+    return mostrarFoto.src = linkImg;//muestra  foto
+  }
+  else{
+    return indiceGlobal = ultimo;
+  }
+  });
   
 });
 
-function MostrarImagen(indice, link){
-  let pArrai = imagenes[indice];
-  if(link == pArrai && indice >= 0 && indice <= 11){
-    var ver = mostrarImg.querySelector('img')
-    ver.src = pArrai;
-    //botones
-    MostrarBotones(ver, indice);
-    const contadorP = document.querySelector('.contador');
-    contadorP.textContent = `${indice +1}/${ultimo}`;
-  }
-};
 
-function MostrarBotones(link, indice){
+
+
+
+
+function MostrarBotones(link){
   btnClose.style.display = "block";
   btnAnt.style.display = "block";
   btnSig.style.display = "block";
   mostrarImg.style.display = "block";
-  //bton cerrar
-  btnClose.addEventListener('click', () => {
-    btnClose.style.display = "none"; 
-    btnAnt.style.display = "none";
-    btnSig.style.display = "none";
-    link.src = " ";//saco la imagen
-    mostrarImg.style.display = "none";
-  });
-
-  // btn anterior
-btnAnt.addEventListener('click', () =>{
-  let actual = indice -1;
-  let linkActual = imagenes[actual];
-    MostrarImagen(actual,linkActual );
-  });
-
-    //bton siguiente
-btnSig.addEventListener('click', () =>{
-  let actual = indice + 1;
-  let linkActual = imagenes[actual];
-  MostrarImagen(actual,linkActual );
-    });
-
+ //bton cerrar
+ btnClose.addEventListener('click', () => {
+  btnClose.style.display = "none"; 
+  btnAnt.style.display = "none";
+  btnSig.style.display = "none";
+  link.src = " ";//saco la imagen
+  mostrarImg.style.display = "none";
+});
 };
+
+
+
+
+
+
 
 
 

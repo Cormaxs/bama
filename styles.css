@@ -106,8 +106,6 @@ h2{
 }
 .ul-main li a > button:hover{
     color: var(--blanco);
-    box-shadow: 1px 2px 5px var(--naranja);
-    
 }
 .dropdown{
     position: relative;
@@ -361,7 +359,6 @@ border-bottom: 1px solid grey;
     width: 100%;
     list-style: none;
     position: relative;
-    background-color: var(--letras);
 }
 
 
@@ -406,6 +403,16 @@ footer{
    margin:4rem 0 auto; padding: 0 0 2rem 0;
    text-align: center;
     background-color:var(--secundario) ;
+}
+footer div > a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: titulo;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+}
+footer div > a:hover{
+    color: var(--naranja);
 }
 footer p{
    padding: 2rem 0 1rem 0;
