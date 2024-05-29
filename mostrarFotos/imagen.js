@@ -24,7 +24,7 @@ const imagenes = [
   container.classList.add('mostrarImg');
   const image = document.createElement('img');
   image.classList.add('imagenActual');
-  image.src = 'algo.jpg';
+  image.src = '';
   image.alt = '';
   container.appendChild(image);
   document.body.appendChild(container);
@@ -38,6 +38,7 @@ const imagenes = [
       const img = document.createElement("img");
       img.src = imagen; // Asignar la URL de la imagen
       img.alt = "imagen de muestra";
+      img.loading = "lazy";
       // Agregar el elemento img al contenedor
       contenedor.appendChild(img);
     }

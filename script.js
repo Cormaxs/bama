@@ -116,4 +116,30 @@ espera(elementoAparecer2, 'aparecer2', 0);
 
 
 
-//carrucel
+//carrucel inicio
+
+const contenedor = document.querySelector('.dentroMain');
+const elementosArrastrables = contenedor.querySelectorAll('.elemento-arrastrable');
+
+elementosArrastrables.forEach(elemento => {
+  elemento.addEventListener('mousedown', (evento) => {
+    const posicionInicialX = evento.clientX;
+    const posicionInicialY = evento.clientY;
+
+    elemento.addEventListener('mousemove', (evento) => {
+      const nuevaPosicionX = evento.clientX - posicionInicialX;
+      const nuevaPosicionY = evento.clientY - posicionInicialY;
+
+      // Actualizar la posición del elemento arrastrable
+      elemento.style.left = nuevaPosicionX + 'px';
+      elemento.style.top = nuevaPosicionY + 'px';
+
+      // Prevenir el scroll nativo
+      evento.preventDefault();
+    });
+  });
+
+  elemento.addEventListener('mouseup', () => {
+    elemento.removeEventListener('mousemove');
+  });
+});

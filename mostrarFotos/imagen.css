@@ -299,6 +299,7 @@ img:hover{
   transform: translate(-50%, -50%);
   width:100%; height: 100%;
   backdrop-filter: blur(20px);
+  background-color: #61616156;
 }
 .imagenActual{
     min-width:100%; height: 100%;
