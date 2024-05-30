@@ -143,3 +143,32 @@ elementosArrastrables.forEach(elemento => {
     elemento.removeEventListener('mousemove');
   });
 });
+
+
+//carrucel no auto
+const sliderInner = document.querySelector('.dentroMain');
+let isDragging = false;
+let dragStartX = 0;
+let sliderInnerX = 0;
+
+sliderInner.addEventListener('mousedown', (event) => {
+  isDragging = true;
+  dragStartX = event.clientX;
+  sliderInnerX = sliderInner.scrollLeft;
+  document.addEventListener('mousemove', mousemoveHandler);
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  document.removeEventListener('mousemove', mousemoveHandler);
+});
+
+function mousemoveHandler(event) {
+  if (!isDragging) return; // Verificar si se está arrastrando
+
+  const newX = event.clientX;
+  const deltaX = newX - dragStartX;
+  sliderInner.scrollLeft = sliderInnerX - deltaX;
+}
+
+

@@ -233,9 +233,9 @@ h2{
     margin: 1.5rem auto;
     display: flex;
     justify-content:left;
-    gap: .8rem;
-    padding: 0 0 3rem 0;
-    overflow-x: auto;
+    padding-bottom: .5rem;
+    gap: 2rem;
+    overflow-x: scroll;
 }
 .dentroMain::-webkit-scrollbar {
     background-color: rgba(225, 225, 225, 0.672);
@@ -437,12 +437,44 @@ border-bottom: 1px solid grey;
 }
 /*metodos de pago*/
 .metodosPago{
-    border: solid red;
     width: 100%; max-width: 1280px;
-    height: 500px;
-    margin: auto;
+    background-color: #f3f3f344;
+    margin:2rem auto;
+    padding: 1rem  0;
 }
-
+.metodosPago > div{
+    display: flex;flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto 2rem;
+    width: 95%;
+}
+.metodosPago h4{
+    font-family: titulo;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.metodosPago > div div{
+    background-color: #e8ecf03c;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.059);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.metodosPago p{
+    font-size: 1.2rem;
+}
+.metodosPago div > svg{
+    width: 50px;
+    height: auto;
+    color: rgb(16, 124, 29);
+    margin: 2rem;
+}
 
 
 /*Posteos*/
@@ -591,4 +623,5 @@ footer > div ol li a svg:hover{
 
 
 
-  
+  /*carrucel*/
+
