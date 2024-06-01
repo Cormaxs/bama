@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-display: Saes-Serif;
+}
+:root{
+    --letras:#222222;
+    --naranja:#b0cf00 ;
+    --gris:#6b7280;
+    --blanco:#eef6ff;
+    --negro:#17181D;
+    --secundario:#232836;
+
+    --gris-fili:#8198ae;
+}
+
+body{
+    background-color: #f3f4f6;
+    font-display: arial;
+}
+
+
+
+.letritas{
+    text-align: center;
+    margin: 2rem 0 ;
+}
+.letritas > span{
+    color: var(--gris-fili);
+    letter-spacing: .3rem;
+  
+}
+.letritas > h3{
+   padding: .2rem;
+}
+
+
+.fotos{
+    width: 100%; max-width: 1600px;
+    display: flex; flex-wrap: wrap;
+    justify-content:center;
+    padding: 1rem 0;
+    gap: 1rem;
+    margin: auto;
+}
+
+.tarjeta-img{
+    position: relative;
+    aspect-ratio: 16/9;
+    max-width: 350px; width: 95%;
+    border-radius: 10px 10px 5px 5px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.297);
+   
+}
+.tarjeta-img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.519);
+}
+
+.tarjeta-img a {
+    color: white;
+    text-decoration: none;
+}
+.tarjeta-img a > img{
+    height: 100%; width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto-img{
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*preguntas frecuentes*/
+.PreguntasFrecuentes{
+    background-color:  #ffffff;
+
+}
+.PreguntasFrecuentes> div{
+    display: flex;
+    margin: auto;
+}
+.tarjetaPFrecuente h5{
+text-align: center;
+cursor: pointer;
+
+}
+.PreguntasFrecuentes > p{
+    margin: 1rem auto 2rem;
+    width: 80%; 
+    text-align: center;
+}
+.tarjetaPFrecuente{
+   border: 1px solid var(--gris-fili);
+   width: 95%; max-width: 1300px;
+   margin:auto; height: auto;
+   padding: 1rem 0;
+}
+.contenido{
+    margin: 1rem auto 2rem;
+    width: 80%;
+    display: none;
+}
+.escondido{
+   display: flex;
+}
+
+
+
+
+
+
+/*metodos de pago*/
+.metodoPago{
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+.blanco{
+    background-color: #ffffff;
+}
+.metodoPago > h3{
+text-align: center;
+margin: 0 0 1rem 0;
+}
+.metodoPago > p{
+    text-align: left;
+    width: 90%; max-width: 1100px;
+    margin: 0 auto 2rem;
+    color: var(--gris);
+}
+.metodoPago > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.TarjetaPago{
+    width: 450px;
+     aspect-ratio: 16/0;
+    text-align: left;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+.TarjetaPago > p{
+    color: var(--gris);
+}

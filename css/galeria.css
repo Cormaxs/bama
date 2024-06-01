@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-display: Saes-Serif;
+}
+:root{
+    --letras:#222222;
+    --naranja:#b0cf00 ;
+    --gris:#6b7280;
+    --blanco:#eef6ff;
+    --negro:#17181D;
+    --secundario:#232836;
+
+    --gris-fili:#8198ae;
+}
+
+body{
+    background-color: #f3f4f6;
+    font-display: arial;
+}
+
+
+
+
+/*galeria*/
+.imagen{
+   width: 100%; max-width: 1280px;
+    height: auto;
+    margin: 5rem auto; padding: 1rem 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    overflow: hidden;
+}
+img{
+    object-fit: cover;
+    width: 350px; max-width: 95%;
+    aspect-ratio: 16/9;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+img:hover{
+   box-shadow: 0 5px 5px var(--gris);
+}
+
+
+
+.contiene{
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+.containerBtn > button{
+    display: none;
+}
+.ant{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    z-index: 10;
+    width: 50px; height: 50px;
+    position: fixed;
+    cursor:pointer;
+    border: none;
+}
+.ant > svg{
+    opacity: .5;
+    width: 40px; height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+.sig{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    z-index: 10;
+    width: 50px; height: 50px;
+    position: fixed;
+    transform: rotatey(180deg);
+    transition: all .3s ease-in-out;
+    border: none;
+    cursor:pointer;
+}
+.sig > svg{
+    opacity: .5;
+    width: 40px; height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+
+.close{
+    opacity: .5;
+    position: absolute;
+    top: 0.5%;
+    right: 0.5%;
+    background-color: transparent;
+    width: 50px; height: 50px;
+    z-index: 10;
+    position: fixed;
+    border:none;
+    cursor:pointer;
+    
+}
+.close > svg{
+    width: 50px; height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+
+.mostrarImg{
+    display: none;
+}
+.mostrarImg{
+   position: absolute;
+   position: fixed;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:100%; height: 100%;
+  backdrop-filter: blur(20px);
+  background-color: #61616156;
+}
+.imagenActual{
+    min-width:100%; height: 100%;
+    object-fit: contain;
+    transition: all .3s  ease-in-out;
+}
+
+.contador{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 11;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}
+
+
+
+
+
+
+ 
+ 
