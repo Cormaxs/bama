@@ -6,7 +6,7 @@
     display: flex; justify-content: space-around;
     align-items: center;
     width: 100%;
-    
+    margin-bottom: -2px;
 }
 .menu a{
     transition: all .3s ease-in-out;
