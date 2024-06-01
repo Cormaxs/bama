@@ -243,11 +243,14 @@ body{
 .tarjetaPlanes{
     border:none;
     border-radius: 10px;
-    width: 30%; max-width: 282.66px; min-width: 250px;
-    height: 384px; padding: 1rem;
+    width: 100%; max-width: 305px; min-width: 250px;
+    height: 390px; padding: 1rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.249);
     background-color: #ffffff;
-
+    transition: all .3s ease-in-out;
+}
+.tarjetaPlanes:hover{
+    transform: scale(1.05);
 }
 .tarjetaPlanes > span{
     font-size: 2rem;
