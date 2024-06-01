@@ -321,3 +321,37 @@ margin: 0 0 1rem 0;
     color: var(--gris);
 }
 
+
+/*preguntas frecuentes*/
+.PreguntasFrecuentes{
+    background-color:  #ffffff;
+
+}
+.PreguntasFrecuentes> div{
+    display: flex;
+    margin: auto;
+}
+.tarjetaPFrecuente h5{
+text-align: center;
+cursor: pointer;
+
+}
+.PreguntasFrecuentes > p{
+    margin: 1rem auto 2rem;
+    width: 80%; 
+    text-align: center;
+}
+.tarjetaPFrecuente{
+   border: 1px solid var(--gris-fili);
+   width: 100%; max-width: 1300px;
+   margin:auto; height: auto;
+   padding: 1rem 0;
+}
+.contenido{
+    margin: 1rem auto 2rem;
+    width: 80%;
+    display: none;
+}
+.escondido{
+   display: flex;
+}
