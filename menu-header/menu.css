@@ -1,21 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-display: Saes-Serif;
-}
-:root{
-    --letras:#222222;
-    --naranja:#b0cf00 ;
-    --gris:#616161;
-    --blanco:#eef6ff;
-    --negro:#17181D;
-    --secundario:#232836;
-}
-
-
 /*Menu*/
-/*tamaños, letras y demas cosas esteticas*/
 
 .menu{
     box-shadow: 0 2px 3px rgba(104, 104, 104, 0.448);
