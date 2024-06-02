@@ -1,4 +1,4 @@
-const imagenes = [
+window.links = [
     "https://i.ibb.co/s5vg7Jq/image.jpg",
 "https://i.ibb.co/8cC0LtP/1.jpg",
 "https://i.ibb.co/0Q31XtJ/2.jpg",
@@ -12,6 +12,5 @@ const imagenes = [
 "https://i.ibb.co/vL6gy3G/10.jpg",
 "https://i.ibb.co/wWCBWSr/11.jpg"
   ];
-  
-  export default imagenes;
-  
+ // console.log(links);
+
