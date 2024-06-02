@@ -83,6 +83,7 @@ body{
 /*preguntas frecuentes*/
 .PreguntasFrecuentes{
     background-color:  var(--blancoFondos);
+    padding-bottom: 20rem;
 
 }
 .PreguntasFrecuentes> div{
