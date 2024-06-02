@@ -326,7 +326,7 @@ margin: 0 0 1rem 0;
 /*preguntas frecuentes*/
 .PreguntasFrecuentes{
     background-color:  var(--blancoFondos);
-
+padding-bottom: 20rem;
 }
 .PreguntasFrecuentes> div{
     display: flex;
