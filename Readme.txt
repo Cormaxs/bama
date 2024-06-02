@@ -7,7 +7,9 @@ estan las fotos de cada sesion.
 
 #archivo sub -> es la entrada, de ahi selecciono que carpeta quiero ver
 
-#en cada carpeta esta el archivo html en donde se genera la galeria.html y un archivo con los links js 
+#en cada carpeta esta el archivo html en donde se genera la galeria.html importando
+el script galeria.js dentro de js y un archivo con los links.js que esta junto con galeria.html
+links.js actua de manera global dentro de la web pasando el array con links a mostrar 
 
 
 

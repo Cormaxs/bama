@@ -9,15 +9,16 @@
     --naranja:#b0cf00 ;
     --gris:#6b7280;
     --blanco:#eef6ff;
+    --blancoFondos:#fdfdfd;
     --negro:#17181D;
     --secundario:#232836;
-
     --gris-fili:#8198ae;
 }
 
 body{
     background-color: #f3f4f6;
     font-display: arial;
+    position: relative;
 }
 
 
@@ -61,7 +62,7 @@ body{
 }
 
 .tarjeta-img a {
-    color: white;
+    color: var(--blancoFondos);
     text-decoration: none;
 }
 .tarjeta-img a > img{
@@ -81,7 +82,7 @@ body{
 
 /*preguntas frecuentes*/
 .PreguntasFrecuentes{
-    background-color:  #ffffff;
+    background-color:  var(--blancoFondos);
 
 }
 .PreguntasFrecuentes> div{
@@ -124,7 +125,7 @@ cursor: pointer;
     padding: 2rem 0;
 }
 .blanco{
-    background-color: #ffffff;
+    background-color: var(--blancoFondos);
 }
 .metodoPago > h3{
 text-align: center;

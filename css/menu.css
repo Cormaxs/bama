@@ -150,6 +150,9 @@ footer{
     margin:4rem 0 auto; padding: 0 0 2rem 0;
     text-align: center;
      background-color:var(--negro) ;
+     position: absolute;
+     width: 100%;
+     left: 0;
  }
  footer div > a{
      color: var(--blanco);

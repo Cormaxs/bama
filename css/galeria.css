@@ -9,15 +9,16 @@
     --naranja:#b0cf00 ;
     --gris:#6b7280;
     --blanco:#eef6ff;
+    --blancoFondos:#fdfdfd;
     --negro:#17181D;
     --secundario:#232836;
-
     --gris-fili:#8198ae;
 }
 
 body{
     background-color: #f3f4f6;
     font-display: arial;
+    position: relative;
 }
 
 
@@ -72,7 +73,7 @@ img:hover{
     width: 40px; height: auto;
     border-radius: 50%;
     padding: 5px;
-    background-color: white;
+    background-color: var(--blancoFondos);
 }
 .sig{
     background-color: transparent;
@@ -92,7 +93,7 @@ img:hover{
     width: 40px; height: auto;
     border-radius: 50%;
     padding: 5px;
-    background-color: white;
+    background-color: var(--blancoFondos);
 }
 
 .close{
@@ -112,7 +113,7 @@ img:hover{
     width: 50px; height: auto;
     border-radius: 50%;
     padding: 5px;
-    background-color: white;
+    background-color: var(--blancoFondos);
 }
 
 .mostrarImg{
@@ -140,7 +141,7 @@ img:hover{
     top: 5px;
     left: 5px;
     z-index: 11;
-    color: rgb(255, 255, 255);
+    color: var(--blancoFondos);
     padding: 2px;
 }
 
