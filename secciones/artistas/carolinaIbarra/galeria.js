@@ -1,6 +1,12 @@
-
-const imagenes = window.links;
-
+// Ejemplo de array con links de imágenes (al menos 5)
+const imagenes = [
+"https://i.ibb.co/ZXnDrjj/image.jpg",
+"https://i.ibb.co/C79gpM3/1.jpg",
+"https://i.ibb.co/SxPmVJw/2.jpg",
+"https://i.ibb.co/DQGg65T/3.jpg",
+"https://i.ibb.co/mv5Zp39/4.jpg",
+  ];
+  
   // Función para generar la estructura HTML
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
@@ -61,7 +67,7 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
         MostrarBotones(src);
         indiceGlobal = elementoEncontrado;
     } else {
-       
+        console.log("intente de nuevo");
     }
     let linkImg = imagenes[indiceGlobal]; // link buscado a traves del indice actual
     if(indiceGlobal != -1){
