@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // Ejemplo de array con links de imágenes (al menos 5)
+=======
+>>>>>>> ae90ab1b22ca0c3243d9e5b0a8ad190a2304a0be
 import imagenes from './links.js';
   
   // Función para generar la estructura HTML
