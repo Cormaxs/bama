@@ -74,33 +74,40 @@
             transform: scaleY(1);
             z-index: 100000;
         }
-    
+        /*botones captura momentos*/
+        .CapturaMomentos > div button{
+            max-width: none;
+        }
+     /*numeros */
+    .container-numeros{
+        flex-wrap: nowrap;
+    }
+    .numeros{
+        min-width: 25%;
     }
 
+    .metodoPago > div{
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    .TarjetaPago{
+       max-width: none;
+    }
+    }
+   
 
 
 
   
  
 /* Mobile Styles (Up to 767px) */
-@media screen and (max-width: 767px) {
-    /*letras*/
-     h1{
-         font-size: 2rem;
-     }
-     p{
-         font-size: 1rem;
-         line-height: 1.5rem;
-     }
-     h2{
-         font-size: 1.8rem;
-     }
-     h3{
-         font-size: 1.6rem;
-     }
-     span{
-         font-size: .8rem;
-     }
-     
+@media screen and (max-width: 767px ) {
+    .container-numeros{
+        flex-wrap: nowrap;
+    }
+    .numeros{
+        min-width: 25%;
+    }
    }
 
