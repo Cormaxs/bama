@@ -40,7 +40,8 @@
     text-align: center;
 }
 .ul-main li a > button{
-    padding: 5px 10px;
+   width: 100%; max-width: 150px;
+   height: 30px;
     border-radius: 5px;
     background-color: var(--naranja);
     border: 1.5px solid var(--naranja);
