@@ -94,6 +94,13 @@
     .TarjetaPago{
        max-width: none;
     }
+
+
+    /*portafolio*/
+    .tarjeta-img{
+        max-width: 45%; min-width: 150px;
+    }
+    
     }
    
 

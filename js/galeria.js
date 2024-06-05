@@ -1,6 +1,6 @@
 
 const imagenes = window.links;
-
+ 
   // Función para generar la estructura HTML
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
@@ -61,7 +61,7 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
         MostrarBotones(src);
         indiceGlobal = elementoEncontrado;
     } else {
-       
+        console.log("intente de nuevo");
     }
     let linkImg = imagenes[indiceGlobal]; // link buscado a traves del indice actual
     if(indiceGlobal != -1){
@@ -108,6 +108,31 @@ function MostrarBotones(link) {
         indiceGlobal = undefined;
     });
 };
+
+
+//cambiar con flechas
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowLeft') {
+    indiceGlobal = indiceGlobal-1;
+  if(indiceGlobal >= primer && indiceGlobal <= ultimo-1){
+    linkImg = imagenes[indiceGlobal];
+    mostrarFoto.src = linkImg;
+    MostrarContador.textContent = `${indiceGlobal + 1}/${ultimo}`;
+  }else{
+    indiceGlobal = primer;
+  }
+
+  } else if (event.key === 'ArrowRight') {
+    indiceGlobal = indiceGlobal+1;
+      if(indiceGlobal >= primer && indiceGlobal <= ultimo-1){
+        linkImg = imagenes[indiceGlobal];
+        mostrarFoto.src = linkImg;
+        MostrarContador.textContent = `${indiceGlobal + 1}/${ultimo}`;
+      }else{
+        indiceGlobal = ultimo-1;
+      }
+  }
+});
 
 
 
