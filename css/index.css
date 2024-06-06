@@ -263,17 +263,12 @@ padding-bottom: 10rem;
 position: relative;
 width: 100%;
 }
-
-.PreguntasFrecuentes> div{
-    display: flex;
-    margin: auto;
-}
 .tarjetaPFrecuente h5{
 text-align: center;
 cursor: pointer;
 border: 1px solid var(--gris-fili);
 width: 100%;
-margin: auto;
+margin: 0 auto;
 padding: 1rem;
 }
 .PreguntasFrecuentes > p{
@@ -284,7 +279,7 @@ padding: 1rem;
 .tarjetaPFrecuente{
    width: 100%;
    margin:auto; height: auto;
-   padding: 1rem 0;
+   padding: .5rem 0;
 }
 .contenido{
     margin:0 auto 2rem;
