@@ -194,20 +194,21 @@ main{
 }
 /*numeros clientes cursos,fotos etc*/
 .container-numeros{
-    width:100%;
-    margin:  -2rem auto;
+    margin: -2rem auto;
     text-align:center;
     display: flex;
-    flex-wrap: wrap;
    justify-content: space-evenly;
-   overflow: hidden;
    gap: 2rem;
    padding: 1rem 0 2rem 0;
   /* background: linear-gradient(to top, #e7e7e7 0%, rgba(104, 197, 126, 0) 100%);*/
 }
+
 .numeros > h2::before{
     content: ' + ';
 }
+
+
+
 /*preguntas Frecuentes*/
 .metodoPago{
     margin: 2rem 0;

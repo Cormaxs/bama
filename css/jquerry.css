@@ -16,7 +16,7 @@
         padding:0 0 2rem 0;
        }
 }
-/* Estilos para Tablet (768px a 1024px) */
+/* Estilos para Tablet (550px a 1024px) */
 @media screen and (max-width: 1024px) {
     /*menu*/
         .menu{
@@ -81,6 +81,8 @@
     .numeros{
         min-width: 25%;
     }
+
+    
     .metodoPago > div{
         max-width: 90%;
         overflow: hidden;
@@ -94,12 +96,21 @@
     }
     }
 /* Mobile Styles (Up to 767px) */
-@media screen and (max-width: 767px ) {
+@media screen and (max-width: 549px ) and (min-width:200px) {
     .container-numeros{
         flex-wrap: nowrap;
     }
     .numeros{
         min-width: 25%;
+    }
+
+
+    .tarjeta-img{
+        position: relative;
+      
+         max-width: 95%;
+         min-width: 175px;
+        border-radius: 10px 10px 5px 5px;
     }
    }
 
