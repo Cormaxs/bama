@@ -76,8 +76,8 @@ font-size: 1.4rem;
 
 
 /*Jquery letras*/
-/* Mobile Styles (Up to 767px) */
-@media screen and (max-width: 767px) {
+/* celulares (Up to 767px) */
+@media screen and (max-width: 767px) and (min-width:300px){
    
     /*letras*/
     h1{
