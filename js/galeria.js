@@ -61,7 +61,7 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
         MostrarBotones(src);
         indiceGlobal = elementoEncontrado;
     } else {
-        console.log("intente de nuevo");
+        return false;
     }
     let linkImg = imagenes[indiceGlobal]; // link buscado a traves del indice actual
     if(indiceGlobal != -1){
