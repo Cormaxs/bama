@@ -14,15 +14,11 @@
     --secundario:#232836;
     --gris-fili:#8198ae;
 }
-
 body{
     background-color: #f3f4f6;
     font-display: arial;
     position: relative;
 }
-
-
-
 .letritas{
     text-align: center;
     margin: 2rem 0 ;
@@ -35,8 +31,6 @@ body{
 .letritas > h3{
    padding: .2rem;
 }
-
-
 .fotos{
     width: 100%; max-width: 1600px;
     display: flex; flex-wrap: wrap;
@@ -45,7 +39,6 @@ body{
     gap: .5rem;
     margin: auto;
 }
-
 .tarjeta-img{
     position: relative;
     aspect-ratio: 16/9;
@@ -54,13 +47,11 @@ body{
     overflow: hidden;
     transition: all .3s ease-in-out;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.297);
-   
 }
 .tarjeta-img:hover{
     transform: translateY(-10px);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.519);
 }
-
 .tarjeta-img a {
     color: var(--blancoFondos);
     text-decoration: none;
@@ -70,7 +61,6 @@ body{
     object-fit: cover;
     border-radius: 10px;
 }
-
 .texto-img{
     background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
     position: absolute;
@@ -79,12 +69,10 @@ body{
     width: 100%;
     text-align: center;
 }
-
 /*preguntas frecuentes*/
 .PreguntasFrecuentes{
     background-color:  var(--blancoFondos);
     padding-bottom: 20rem;
-
 }
 .PreguntasFrecuentes> div{
     display: flex;
@@ -93,7 +81,6 @@ body{
 .tarjetaPFrecuente h5{
 text-align: center;
 cursor: pointer;
-
 }
 .PreguntasFrecuentes > p{
     margin: 1rem auto 2rem;

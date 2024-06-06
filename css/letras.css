@@ -4,8 +4,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
-h1{
-    
+h1{ 
     font-size: 3.2rem;
 }
 h2{
@@ -44,9 +43,7 @@ span{
     font-size: 1rem;
     color: var(--gris);
 }
-
 /*especificos*/
-
 .texto-img > h3{
 font-size: 1.4rem;
 }
@@ -56,7 +53,6 @@ font-size: 1.4rem;
     font-size: 1.25rem;
     letter-spacing: 1px;
 }
-
 .numeros{
     min-width: 300px;max-width: 100%;
     font-weight: 800;
@@ -70,15 +66,9 @@ font-size: 1.4rem;
 .CapturaMomentos > div button{
     font-size: 1.15rem;
 }
- 
- 
- 
-
-
 /*Jquery letras*/
 /* celulares (Up to 767px) */
 @media screen and (max-width: 767px) and (min-width:300px){
-   
     /*letras*/
     h1{
         font-size: 1.95rem;
@@ -108,14 +98,10 @@ font-size: 1.4rem;
      #contador1,#contador2,#contador3{
         font-size: 1.55rem;
      }
-     
    }
-
-
    /* Estilos para Tablet (768px a 1024px) */
 @media screen and (max-width: 1024px) and (min-width: 768px){
     h1{
-    
         font-size: 2.45rem;
     }
     h2{
@@ -140,5 +126,4 @@ font-size: 1.4rem;
      span{
          font-size: .8rem;
      }
-
 }

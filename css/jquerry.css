@@ -15,10 +15,7 @@
        .CapturaMomentos{
         padding:0 0 2rem 0;
        }
-
 }
-
-
 /* Estilos para Tablet (768px a 1024px) */
 @media screen and (max-width: 1024px) {
     /*menu*/
@@ -49,7 +46,6 @@
            margin: 1em 0 1em 0;
            transition: all .3s ease-in-out;
         }
-        
         .sublist{
             background-color: transparent;
             position: static;
@@ -85,29 +81,18 @@
     .numeros{
         min-width: 25%;
     }
-
     .metodoPago > div{
         max-width: 90%;
         overflow: hidden;
     }
-
     .TarjetaPago{
        max-width: none;
     }
-
-
     /*portafolio*/
     .tarjeta-img{
         max-width: 45%; min-width: 150px;
     }
-    
     }
-   
-
-
-
-  
- 
 /* Mobile Styles (Up to 767px) */
 @media screen and (max-width: 767px ) {
     .container-numeros{
