@@ -1,6 +1,7 @@
 
 const imagenes = window.links;
  
+const imagenCarga = 'linkcarga';
   // Función para generar la estructura HTML
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
@@ -23,9 +24,10 @@ const imagenes = window.links;
     for (const imagen of imagenes) {
       // Crear un elemento img
       const img = document.createElement("img");
-      img.src = imagen; // Asignar la URL de la imagen
+      img.src = imagenCarga; // Asignar la URL de la imagen
       img.alt = "imagen de muestra";
-      img.loading = "lazy";
+      img.setAttribute('data-src', imagen);//creo el atributo para las imagenes reales
+      img.classList.add('lazy-image');//agrego la clase
       // Agregar el elemento img al contenedor
       contenedor.appendChild(img);
     }
@@ -61,7 +63,7 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
         MostrarBotones(src);
         indiceGlobal = elementoEncontrado;
     } else {
-        return false;
+        console.log("intente de nuevo");
     }
     let linkImg = imagenes[indiceGlobal]; // link buscado a traves del indice actual
     if(indiceGlobal != -1){
@@ -133,6 +135,30 @@ document.addEventListener('keydown', function(event) {
       }
   }
 });
+
+
+
+
+// Obtener imágenes perezosas lazy load
+const imagenesPerezosas = document.querySelectorAll('.lazy-image');
+// Crear observador de intersecciones
+const observador = new IntersectionObserver((entradas, observador) => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      // Cargar la imagen al entrar en el viewport
+      const imagen = entrada.target;
+      imagen.src = imagen.dataset.src;
+      imagen.classList.remove('lazy-image'); // Eliminar la clase lazy-image
+      // Dejar de observar la imagen una vez cargada
+      observador.unobserve(imagen);
+    }
+  });
+});
+// Observar cada imagen perezosa
+imagenesPerezosas.forEach(imagen => {
+  observador.observe(imagen);
+});
+
 
 
 

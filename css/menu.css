@@ -1,4 +1,10 @@
 /*Menu*/
+.Logosvg{
+    width: auto; height: 49px;
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+}
+
 .menu{
     box-shadow: 0 2px 3px rgba(104, 104, 104, 0.448);
     background-color: var(--negro);
