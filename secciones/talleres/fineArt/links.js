@@ -1,25 +1,10 @@
 window.links = [
-  "https://i.ibb.co/jHZyGhS/7.jpg",
-  "https://i.ibb.co/HCMDmzQ/8.jpg",
-  "https://i.ibb.co/CnWZWPs/9.jpg",
-  "https://i.ibb.co/nsFrVY1/10.jpg",
-  "https://i.ibb.co/Q6474sT/11.jpg",
-  "https://i.ibb.co/pJZbpgy/12.jpg",
-  "https://i.ibb.co/d6L6Mqw/13.jpg",
-  "https://i.ibb.co/2hqT0hz/14.jpg",
-  "https://i.ibb.co/48q7Xz3/15.jpg",
-  "https://i.ibb.co/7WDPTZS/16.jpg",
-  "https://i.ibb.co/dk24vw0/17.jpg",
-  "https://i.ibb.co/ChmdmCv/18.jpg",
-  "https://i.ibb.co/0ZfRLJf/19.jpg",
-  "https://i.ibb.co/ynpPGLb/20.jpg",
-  "https://i.ibb.co/2FDqP53/image.jpg",
-  "https://i.ibb.co/Kr3V6Lp/1.jpg",
-  "https://i.ibb.co/k4bk7SK/2.jpg",
-  "https://i.ibb.co/ZdHZbRN/3.jpg",
-  "https://i.ibb.co/ryXTfXt/4.jpg",
-  "https://i.ibb.co/rdyymQS/5.jpg",
-  "https://i.ibb.co/jZNfgtb/6.jpg",
-  ];
-
-
+  "https://i.ibb.co/WcSXDwS/bama-fotografia-431.webp",
+  "https://i.ibb.co/RYDVNWF/bama-fotografia-425.webp",
+  "https://i.ibb.co/RyCXtQz/bama-fotografia-428.webp",
+  "https://i.ibb.co/4p0gm6g/bama-fotografia-395.webp",
+  "https://i.ibb.co/sb2Djb1/bama-fotografia-394.webp",
+  "https://i.ibb.co/nwcCMPH/bama-fotografia-403.webp",
+  "https://i.ibb.co/sjWnm0y/bama-fotografia-391.webp",
+  "https://i.ibb.co/d0Kqf4f/bama-fotografia-401.webp"
+];
