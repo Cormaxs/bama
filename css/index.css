@@ -6,11 +6,11 @@
 }
 :root{
     --letras:#222222;
-    --naranja:#b0cf00 ;
+    --naranja:#9d9edc;
     --gris:#6b7280;
-    --blanco:#eef6ff;
+    --blanco:#d1d1d1;
     --blancoFondos:#fdfdfd;
-    --negro:#17181D;
+    --negro:#171523;
     --secundario:#232836;
     --gris-fili:#8198ae;
 }
@@ -137,7 +137,7 @@ body{
     width: 50%;max-width: 320px; min-width: 292px;   height: auto; min-height: 300px;
     object-fit: cover;
     transition: all .3s ease-in-out;
-    filter: drop-shadow(0px 0px 5px #02b7ff);
+    filter: drop-shadow(0px 0px 5px #9d9edc);
 }
 .letritas{
     text-align: center;

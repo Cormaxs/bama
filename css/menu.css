@@ -1,10 +1,14 @@
 /*Menu*/
 .Logosvg{
-    width: auto; height: 49px;
+    width: auto; height: 80px; max-height: 100px; min-height: 50px;
     object-fit: contain;
-    background-color: rgb(255, 255, 255);
 }
-
+@media screen and (max-width:550px) and (min-width:200px){
+    .Logosvg{
+        height: 50px;
+        object-fit: contain;
+    }
+}
 .menu{
     box-shadow: 0 2px 3px rgba(104, 104, 104, 0.448);
     background-color: var(--negro);
@@ -22,7 +26,7 @@
 }
 .logo{
     width: 100px;
-    text-align: center;
+    text-align: left;
     color: var(--blanco);
 }
 .menu > .logo > a{
