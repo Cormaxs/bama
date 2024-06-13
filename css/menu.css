@@ -3,6 +3,9 @@
     width: auto; height: 80px; max-height: 100px; min-height: 50px;
     object-fit: contain;
 }
+:root{
+    --naranja:#9d9edc;
+}
 @media screen and (max-width:550px) and (min-width:200px){
     .Logosvg{
         height: 50px;
