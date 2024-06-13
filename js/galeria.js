@@ -1,7 +1,7 @@
 
 const imagenes = window.links;
  
-const imagenCarga = 'linkcarga';
+const imagenCarga = 'https://i.ibb.co/WVjMyq2/logo-Blanco.png';
   // Función para generar la estructura HTML
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
