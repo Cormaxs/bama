@@ -1,7 +1,7 @@
 
 const imagenes = window.links;
  
-const imagenCarga = 'https://i.ibb.co/NnwcgkD/png.png';
+const imagenCarga = 'https://i.ibb.co/tmFzM5z/Logo-Carga.webp';
   // Función para generar la estructura HTML
   function generarEstructuraHTML(imagenes) {
     // Crear el elemento contenedor
