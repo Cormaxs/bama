@@ -1,6 +1,8 @@
 // Obtener imágenes perezosas
 const imagenesPerezosas = document.querySelectorAll('.lazy-image');
 
+
+
 // Crear observador de intersecciones
 const observador = new IntersectionObserver((entradas, observador) => {
   entradas.forEach(entrada => {
