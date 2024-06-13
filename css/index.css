@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-display: Saes-Serif;
+    font-display:arial;
 }
+
+
 :root{
     --letras:#222222;
     --naranja:#9d9edc;
@@ -16,7 +18,6 @@
 }
 body{
     background-color: #f3f4f6;
-    font-display: arial;
     position: relative;
 }
 
@@ -71,10 +72,12 @@ body{
     height: auto;
     overflow: hidden;
     border-radius: 5px;
+    
 }
 .slider-box ul{
     display: flex;
-    width: 1000%;
+    
+    width: 1000%; 
     animation: slide 40s infinite alternate ease-in-out;
 }
 .slider-box li{
@@ -83,7 +86,7 @@ body{
     position: relative;
 }
 .slider-box img{
-    width: 100%; height: 100%;
+    width: 100%; 
     object-fit: contain;
 }
 @keyframes slide{

@@ -1,8 +1,14 @@
 /*letras*/
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('https://bamafotografia.com/fonts/Blackgold-qGAl.otf');
+}
+
 h1,h2,h3,h4,h5,h6{
     color: var(--negro);
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'MyFont';
 }
 h1{ 
     font-size: 3.2rem;
@@ -34,10 +40,12 @@ p{
 }
 button{
     font-size: .88rem;
+    font-family: 'titulos';
 }
 a{
    text-decoration: none;
    color: var(--Blanco);
+   font-family: 'titulos';
 }
 span{
     font-size: 1rem;
@@ -47,18 +55,21 @@ span{
 .texto-img > h3{
 font-size: 1.4rem;
 }
-.menu a{
+.menu a {
     color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.25rem;
     letter-spacing: 1px;
+}
+.ul-main li a > button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;  font-size: 1.25rem;
 }
 .numeros{
     max-width: 100%;
     font-weight: 800;
     text-align: center;
     font-size: 1.2rem;
-    font-family: "titulo";
 }
 .numeros > h2{
     font-size: 2.2rem;

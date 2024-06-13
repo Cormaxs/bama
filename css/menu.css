@@ -1,7 +1,8 @@
 /*Menu*/
 .Logosvg{
-    width: auto; height: 80px; max-height: 100px; min-height: 50px;
+    width: 150px; height: auto;
     object-fit: contain;
+    margin: 1rem;
 }
 
 @media screen and (max-width:550px) and (min-width:200px){
@@ -17,6 +18,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: -2px;
+    min-height: 50px;
 }
 .menu a{
     transition: all .3s ease-in-out;
@@ -35,7 +37,8 @@
 }
 /*empieza */
 .ul-main{
-    height: 59px;
+    height: 60px;
+    margin-top: -3px;
     list-style: none;
     display: flex;
     width: 100%; max-width: 700px;
@@ -48,10 +51,10 @@
 }
 .ul-main li a > button{
    width: 100%; max-width: 150px;
-   height: 30px;
+   height: 35px; padding-bottom: .3rem;
     border-radius: 5px;
     background-color: var(--naranja);
-    border: 1.5px solid var(--naranja);
+ border: none;
     color: var(--negro);
     transition: all .3s ease-in-out;
     cursor: pointer;
