@@ -1,14 +1,18 @@
 /*letras*/
 
 @font-face {
-    font-family: 'MyFont';
+    font-family: 'blackgold';
     src: url('https://bamafotografia.com/fonts/Blackgold-qGAl.otf');
+}
+@font-face {
+    font-family: 'espoirSerif';
+    src: url('https://bamafotografia.com/fonts/EspoirSerif-Regular.otf');
 }
 
 h1,h2,h3,h4,h5,h6{
     color: var(--negro);
     font-weight: 600;
-    font-family: 'MyFont';
+    font-family: 'blackgold';
 }
 h1{ 
     font-size: 3.2rem;
@@ -53,7 +57,10 @@ span{
 }
 /*especificos*/
 .texto-img > h3{
-font-size: 1.4rem;
+font-size: 1.8rem;
+font-family: 'espoirSerif';
+font-weight: 600;
+letter-spacing: 1.5px;
 }
 .menu a {
     color: #ffffff;
@@ -77,6 +84,12 @@ font-size: 1.4rem;
 .CapturaMomentos > div button{
     font-size: 1.15rem;
 }
+.tarjetaPFrecuente > h5{
+    font-family: 'blackgold';
+    font-weight: 600;
+}
+
+
 /*Jquery letras*/
 /* celulares (Up to 767px) */
 @media screen and (max-width: 767px) and (min-width:300px){
@@ -89,6 +102,9 @@ font-size: 1.4rem;
     }
     h3{
         font-size: 1.55rem;
+    }
+    .texto-img > h3{
+        font-size: 1.2rem;
     }
     h4{
         font-size: 1.35rem;
