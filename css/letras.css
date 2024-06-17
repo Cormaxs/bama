@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6{
     color: var(--negro);
     font-weight: 600;
     font-family: 'blackgold';
+    letter-spacing: 1.5px;
 }
 h1{ 
     font-size: 3.2rem;
@@ -85,10 +86,20 @@ letter-spacing: 1.5px;
     font-size: 1.15rem;
 }
 .tarjetaPFrecuente > h5{
-    font-family: 'blackgold';
+    font-family: 'espoirSerif';
+    letter-spacing: 1.5px;
     font-weight: 600;
 }
-
+.CapturaMomentos div > h1{
+    font-family: 'espoirSerif';
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+}
+.sobreMi > div h2{
+    font-family: 'espoirSerif';
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+}
 
 /*Jquery letras*/
 /* celulares (Up to 767px) */
@@ -97,8 +108,14 @@ letter-spacing: 1.5px;
     h1{
         font-size: 1.95rem;
     }
+    .CapturaMomentos div > h1{
+        font-size: 2.9rem;
+    }
     h2{
         font-size: 1.75rem;
+    }
+    .sobreMi > div h2{
+        font-size: 3rem;
     }
     h3{
         font-size: 1.55rem;
@@ -130,6 +147,9 @@ letter-spacing: 1.5px;
 @media screen and (max-width: 1024px) and (min-width: 768px){
     h1{
         font-size: 2.45rem;
+    }
+    .CapturaMomentos div > h1{
+        font-size: 2rem;
     }
     h2{
         font-size: 2.15rem;
