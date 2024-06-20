@@ -1,8 +1,8 @@
 /*Menu*/
 .Logosvg{
-    width: 150px; height: auto;
+    width: 150px; height: 58.63px;
     object-fit: contain;
-    margin: 1rem;
+    margin:5px -30px 0px -30px;
 }
 
 @media screen and (max-width:550px) and (min-width:200px){
