@@ -24,7 +24,7 @@
     transition: all .3s ease-in-out;
     text-decoration: none;
 }
-.menu a:hover{
+.menu a:hover, .dropdown > p:hover{
     color:var(--naranja)
 }
 .logo{
@@ -68,12 +68,18 @@
 }
 .dropdown{
     position: relative;
+    z-index: 10;
+}
+.dropdown > p{
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 .sublist{
     width: 200px;
     left: -50px;
     padding: 0 0px 0 50px;
-    margin: 18px 0 0 0;
+    margin: 15px 0 0 0;
     background-color: var(--negro);
     position: absolute;
     list-style: none;

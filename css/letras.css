@@ -47,7 +47,7 @@ button{
     font-size: .88rem;
     font-family: 'titulos';
 }
-a{
+a,.dropdown > p{
    text-decoration: none;
    color: var(--Blanco);
    font-family: 'titulos';
@@ -63,7 +63,7 @@ font-family: 'espoirSerif';
 font-weight: 600;
 letter-spacing: 1.5px;
 }
-.menu a {
+.menu a , .dropdown > p{
     color: #ffffff;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.25rem;
