@@ -67,6 +67,7 @@ var indiceImagen = imagenContainer.addEventListener("click", (event) => {
     }
     let linkImg = imagenes[indiceGlobal]; // link buscado a traves del indice actual
     if(indiceGlobal != -1){
+      
       mostrarFoto.src = linkImg; // muestra  foto
       MostrarContador.textContent = `${indiceGlobal + 1}/${ultimo}`;
     }
@@ -94,14 +95,17 @@ btnAnt.addEventListener('click', () => {
     indiceGlobal = primer;
   }
 });
-
+//no deja despazar hacia abajo el scroll del body
+const body = document.querySelector('body');
 function MostrarBotones(link) {
+    body.style.overflow = 'hidden';
     btnClose.style.display = "block";
     btnAnt.style.display = "block";
     btnSig.style.display = "block";
     mostrarImg.style.display = "block";
     // boton cerrar
     btnClose.addEventListener('click', () => {
+       body.style.overflow = 'scroll';
         btnClose.style.display = "none";
         btnAnt.style.display = "none";
         btnSig.style.display = "none";
