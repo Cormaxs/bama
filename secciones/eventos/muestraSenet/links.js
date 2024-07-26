@@ -1,20 +1,10 @@
 window.links = [
-  "https://i.ibb.co/rGPMjSY/Bama-Fotografia-214.webp",
-  "https://i.ibb.co/qyF5H8d/Bama-Fotografia-215.webp",
-  "https://i.ibb.co/QpCS5gT/Bama-Fotografia-210.webp",
-  "https://i.ibb.co/XjyghLp/Bama-Fotografia-213.webp",
-  "https://i.ibb.co/pRWQ0VK/Bama-Fotografia-217.webp",
-  "https://i.ibb.co/X8GVJ8Q/Bama-Fotografia-221.webp",
-  "https://i.ibb.co/6wg7HgY/Bama-Fotografia-220.webp",
-  "https://i.ibb.co/qNMn4MZ/Bama-Fotografia-219.webp",
-  "https://i.ibb.co/8BYVfHL/Bama-Fotografia-225.webp",
-  "https://i.ibb.co/C5T35G8/Bama-Fotografia-226.webp",
-  "https://i.ibb.co/K2MGV3M/Bama-Fotografia-232.webp",
-  "https://i.ibb.co/6BNwtV7/Bama-Fotografia-218.webp",
-  "https://i.ibb.co/8rVFpNX/Bama-Fotografia-230.webp",
-  "https://i.ibb.co/wwqcmjM/Bama-Fotografia-229.webp",
-  "https://i.ibb.co/YWwgF8V/Bama-Fotografia-222.webp",
-  "https://i.ibb.co/z2wVqcs/Bama-Fotografia-224.webp",
-  "https://i.ibb.co/9NV9ShW/Bama-Fotografia-212.webp",
-  "https://i.ibb.co/d0LGy8T/Bama-Fotografia-211.webp"
-];
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-0.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-1.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-2.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-3.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-4.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-5.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-6.webp",
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/Eventos/Muestrasenet/BamaFotografia-7.webp"
+]
