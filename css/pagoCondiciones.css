@@ -23,25 +23,12 @@ body{
 }
 
 
-.container{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    column-gap: 1rem;
-}
 
 
-.img-lado{
-    width: 50%; min-width: 500px; 
-    object-fit: contain;
-}
 
-.metodoPago{
-    width: 40%; min-width: 350px;
-}
 /*metodos de pago*/
 .metodoPago{
+    width: 100% !important;
     margin: 2rem 0;
     padding: 2rem 0;
 }
@@ -50,10 +37,12 @@ text-align: center;
 margin: 0 0 1rem 0;
 }
 .metodoPago > p{
+    margin: auto;
     text-align: left;
     padding: 0 2rem 0 .99rem;
-    width: 95%; max-width: 1100px;
+   width: 95%;
     color: var(--gris);
+    max-width: 1550px;
 }
 .metodoPago > div{
     display: flex;
@@ -65,7 +54,7 @@ margin: 0 0 1rem 0;
 }
 
 .TarjetaPago{
-    width: 100%; min-width: 350px; max-width: 450px;
+    width: 100%; 
     text-align: left;
     padding: 1rem;
     
@@ -74,7 +63,5 @@ margin: 0 0 1rem 0;
     color: var(--gris);
 }
 @media screen and (max-width:870px) {
-    .img-lado,  .metodoPago{
-       min-width: 100%;
-    }
+   
 }
