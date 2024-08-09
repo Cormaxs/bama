@@ -6,6 +6,7 @@ window.links = [
   "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/eventos/bautismo/BamaFotografia-4.webp",
   "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/eventos/bautismo/BamaFotografia-5.webp",
   "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/eventos/bautismo/BamaFotografia-6.webp",
-  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/eventos/bautismo/BamaFotografia-7.webp"
+  "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/eventos/bautismo/BamaFotografia-7.webp",
+    "https://raw.githubusercontent.com/Bamafotografia/Fotos/main/eventos/bautismo/BamaFotografia-8.webp"
 
 ]
