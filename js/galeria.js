@@ -190,11 +190,11 @@ imagenesPerezosas.forEach(imagen => {
         }
 
         // Agregar palabras clave
-        const palabrasClave = 'Bama,fotografía, catamarca, bamafotografia';
+        const palabrasClave = 'Bama, bama,fotografía,Fotografía, catamarca,Catamarca, bamafotografia,Bamafotografia,bama fotografia, bamafotografía,Bamafotografía, bama fotografía, fotografos catamarca,Fotografos Catamarca, fotografos argentina,Fotografos Argentina, Mayra Nicole,mayra nicole, fotografia catamarca';
         agregarMeta('keywords', palabrasClave);
 
         // Agregar descripción (opcional)
-        const descripcion = 'Soy bama una fotografa apasionada, que cuenta historias a través de imágenes.Mi portafolio muestra una selección de mis mejores trabajos, desde retratos conmovedores hasta paisajes impresionantes.';
+        const descripcion = "¡Hola! Soy Mayra Nicole Barros, fotógrafa en Catamarca, Argentina. Desde 2019, convertí mi pasión por la fotografía en mi profesión. Mi trabajo abarca autorretratos, eventos sociales y proyectos documentales. He participado en exposiciones colectivas en San Fernando del Valle de Catamarca, como la Muestra del Taller Anual de Fotografía y 'Cuerpos'. Estoy lista para capturar tu próxima propuesta con dedicación y estilo artístico. ¡Hablemos!";
         agregarMeta('description', descripcion);
 
         // Agregar enlace canonical
