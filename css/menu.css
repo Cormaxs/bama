@@ -1,0 +1,171 @@
+/*Menu*/
+.Logosvg{
+    width: 150px; height: 58.63px;
+    object-fit: contain;
+    margin:5px -30px 0px -30px;
+}
+
+@media screen and (max-width:550px) and (min-width:200px){
+    .Logosvg{
+        height: 50px;
+        object-fit: contain;
+    }
+}
+.menu{
+    box-shadow: 0 2px 3px rgba(104, 104, 104, 0.448);
+    background-color: var(--negro);
+    display: flex; justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -2px;
+    min-height: 50px;
+}
+.menu a{
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+.menu a:hover, .dropdown > p:hover{
+    color:var(--naranja)
+}
+.logo{
+    width: 100px;
+    text-align: left;
+    color: var(--blanco);
+}
+.menu > .logo > a{
+    font-size: 2rem;
+    object-fit: cover;
+}
+.menu .logo a > img{
+   margin:-30px -30px -15px -30px;
+}
+/*empieza */
+.ul-main{
+    height: 60px;
+    margin-top: -3px;
+    list-style: none;
+    display: flex;
+    width: 100%; max-width: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ul-main li{
+    width: 100px;
+    text-align: center;
+}
+.ul-main li a > button{
+   width: 100%; max-width: 150px;
+   height: 30px; padding-bottom: .2em;
+    border-radius: 5px;
+    background-color: var(--naranja);
+    border: none;
+    color: var(--negro);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.ul-main li a > button:hover{
+    color: var(--blanco);
+}
+.dropdown{
+    position: relative;
+    z-index: 5;
+}
+.dropdown > p{
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.sublist{
+    width: 200px;
+    left: -50px;
+    padding: 0 0px 0 50px;
+    margin: 15px 0 0 0;
+    background-color: var(--negro);
+    position: absolute;
+    list-style: none;
+    display: none;
+}
+.sublist > li{
+    transition: all .3s ease-in-out;
+    margin: 1em 0 1em 0;
+}
+.hover{
+    display: block;
+}
+.aparece{
+    max-width:44px;
+    transform: rotate(90deg);
+    background-color: transparent;
+    display: none;
+    border: none;
+    border-radius: 6px;
+    color: var(--Blanco);
+}
+/*footer*/
+footer{
+    position:absolute;
+    bottom:0; top:100%;
+    text-align: center;
+     background-color:var(--negro) ;
+     width: 100%; height:380px;
+ }
+ footer div > a{
+     color: var(--blanco);
+     text-decoration: none;
+     font-family: titulo;
+     font-size: 2rem;
+     transition: all .3s ease-in-out;
+ }
+ footer div > a:hover{
+     color: var(--naranja);
+ }
+ footer div > a img{
+    min-width: 300px;
+ }
+ footer div > a img:hover{
+    filter: drop-shadow(0px 3px 5px var(--naranja));
+ }
+ footer p{
+    padding: 2rem 0 1rem 0;
+    color: #616161;
+ }
+ footer p > a{
+     color: #ffffff;
+     text-decoration: none;
+     transition: all .3s ease-in-out;
+ }
+ footer p > a:hover{
+     color: var(--naranja);
+ }
+ footer > div {
+     width: 95%; max-width: 1290px;
+     margin: auto; padding: 2rem 0 0rem 0;
+     display: grid;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     gap: 2em;
+ }
+ footer > div img{
+     width: 200px; height: 100px;
+     object-fit: cover;
+ }
+ footer > div ol{
+     display: flex;
+     flex-wrap: wrap;
+     flex-grow: 1;flex-basis: 200;
+     justify-content: center;
+     gap: 2rem;
+ }
+ footer > div ol li{
+     list-style: none;
+     width: 30px ; height: 30px; 
+ }
+ footer > div ol li a svg{
+     color:var(--gris);
+     width: 100%; height: 100%;
+     transition: all .3s ease-in-out;
+ }
+ footer > div ol li a svg:hover{
+     color: var(--naranja);
+ }

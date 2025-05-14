@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-display:arial;
+}
+
+
+:root{
+    --letras:#222222;
+    --naranja:#9d9edc;
+    --gris:#6b7280;
+    --blanco:#d1d1d1;
+    --blancoFondos:#fdfdfd;
+    --negro:#171523;
+    --secundario:#232836;
+    --gris-fili:#8198ae;
+}
+body{
+    background-color: #f3f4f6;
+    position: relative;
+    min-height: 1000px;
+}
+
+
+
+
+
+/*metodos de pago*/
+.metodoPago{
+    width: 100% !important;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+.metodoPago > h3{
+text-align: center;
+margin: 0 0 1rem 0;
+}
+.metodoPago > p{
+    margin: auto;
+    text-align: left;
+    padding: 0 2rem 0 .99rem;
+   width: 95%;
+    color: var(--gris);
+    max-width: 1550px;
+}
+.metodoPago > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 100%; max-width: 1550px;
+    justify-content: space-between;
+}
+
+.TarjetaPago{
+    width: 100%; 
+    text-align: left;
+    padding: 1rem;
+    
+}
+.TarjetaPago > p{
+    color: var(--gris);
+}
+@media screen and (max-width:870px) {
+   
+}

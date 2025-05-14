@@ -1,0 +1,176 @@
+/*letras*/
+
+@font-face {
+    font-family: 'blackgold';
+    src: url('https://bamafotografia.com/fonts/Blackgold-qGAl.otf');
+}
+@font-face {
+    font-family: 'espoirSerif';
+    src: url('https://bamafotografia.com/fonts/EspoirSerif-Regular.otf');
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--negro);
+    font-weight: 600;
+    font-family: 'blackgold';
+    letter-spacing: 1.5px;
+}
+h1{ 
+    font-size: 3.2rem;
+}
+h2{
+    font-size: 2.7rem;
+}
+h3{
+    font-size: 2.49rem;
+}
+h4{
+    font-size: 2.32rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1rem;
+}
+.texto-img h3{
+    color: #ffffff;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    color: var(--negro);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    font-size: .88rem;
+    font-family: 'titulos';
+}
+a,.dropdown > p{
+   text-decoration: none;
+   color: var(--Blanco);
+   font-family: 'titulos';
+}
+span{
+    font-size: 1rem;
+    color: var(--gris);
+}
+/*especificos*/
+.texto-img > h3{
+font-size: 1.8rem;
+font-family: 'espoirSerif';
+font-weight: 600;
+letter-spacing: 1.5px;
+}
+.menu a , .dropdown > p{
+    color: #ffffff;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+.ul-main li a > button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+}
+.numeros{
+    max-width: 100%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.numeros > h2{
+    font-size: 2.2rem;
+}
+.CapturaMomentos > div button{
+    font-size: 1.15rem;
+}
+.tarjetaPFrecuente > h5{
+    font-family: 'espoirSerif';
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.CapturaMomentos div > h1{
+    font-family: 'espoirSerif';
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+}
+.sobreMi > div h2{
+    font-family: 'espoirSerif';
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+}
+
+/*Jquery letras*/
+/* celulares (Up to 767px) */
+@media screen and (max-width: 767px) and (min-width:300px){
+    /*letras*/
+    h1{
+        font-size: 1.95rem;
+    }
+    .CapturaMomentos div > h1{
+        font-size: 2.9rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    .sobreMi > div h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1.55rem;
+    }
+    .texto-img > h3{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1.35rem;
+    }
+    h5{
+        font-size: 1.25rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+     p{
+         font-size: 1rem;
+         line-height: 1.5rem;
+     }
+     span{
+         font-size: .8rem;
+     }
+     #contador1,#contador2,#contador3{
+        font-size: 1.55rem;
+     }
+   }
+   /* Estilos para Tablet (768px a 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    h1{
+        font-size: 2.45rem;
+    }
+    .CapturaMomentos div > h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2.15rem;
+    }
+    h3{
+        font-size: 1.95rem;
+    }
+    h4{
+        font-size: 1.75rem;
+    }
+    h5{
+        font-size: 1.55rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+     p{
+         font-size: 1.05rem;
+         line-height: 1.5rem;
+     }
+     span{
+         font-size: .8rem;
+     }
+}

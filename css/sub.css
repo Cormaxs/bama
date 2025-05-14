@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-display: Saes-Serif;
+}
+:root{
+    --letras:#222222;
+    --naranja:#9d9edc;
+    --gris:#6b7280;
+    --blanco:#d1d1d1;
+    --blancoFondos:#fdfdfd;
+    --negro:#171523;
+    --secundario:#232836;
+    --gris-fili:#8198ae;
+}
+body{
+    background-color: #f3f4f6;
+    font-display: arial;
+    position: relative;
+    min-height: 1000px;
+}
+.letritas{
+    text-align: center;
+    margin: 2rem 0 ;
+}
+.letritas > span{
+    color: var(--gris-fili);
+    letter-spacing: .3rem;
+  
+}
+.letritas > h3{
+   padding: .2rem;
+}
+.fotos{
+    width: 100%; max-width: 1600px;
+    display: flex; flex-wrap: wrap;
+    justify-content:center;
+    padding: 1rem 0;
+    gap: .5rem;
+    margin: auto;
+}
+.tarjeta-img{
+    position: relative;
+    aspect-ratio: 16/9;
+    max-width: 45%; width: 98%;
+    min-width: 175px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.297);
+    overflow: hidden;
+}
+.tarjeta-img a {
+    color: var(--blancoFondos);
+    text-decoration: none;
+}
+.tarjeta-img a >img{
+    height: 100%; width: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+    
+}
+.tarjeta-img a > img:hover{
+  
+    transform: scale(1.2);
+    filter:brightness(.5);
+}
+.texto-img{
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
